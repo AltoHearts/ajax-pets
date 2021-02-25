@@ -12,6 +12,7 @@
             $("#pet_likes").hide();
             $("#pet_eats").hide();
             $("#petName").hide();
+          
 
             $("#pet_feels").click(function(e){
                 //alert("feels is clicked");
@@ -35,6 +36,7 @@
               let likes = $("input[name=likes]:checked").val();
               let eats = $("input[name=eats]:checked").val();
               let pet = "";//will store our pet
+              let namee = $("input[name=namee]").val(); 
                     //alert(feels);
 
 
@@ -69,6 +71,7 @@
 
                 //create text to tell user about pet!
               let output = "";
+              output += `<p>Your pet's name is: ${namee}</p>`;
               output += `<p>Your pet is a: ${pet}</p>`;
               output += `<p>Your pet feels: ${feels}</p>`;
               output += `<p>Your pet likes to be:  ${likes}</p>`;
@@ -108,13 +111,16 @@
        <input type="radio" name="eats" value="carrots" required="required"> carrots <br />
        <input type="radio" name="eats" value="pets"> other people's pets <br />
    </div>
+    <div id="petName">
+        <h3>Name your pet:</h3>
+        <input type="text" name="namee" size="50" required="required">
+        <br />
+    </div>
   
    <input type="submit" value="submit it!" />
-   <div id="pet">Pic of pet goes here</div>
-   <div id="output"> Output goes here! </div>
-   <div id="petName">
-       Name your pet: <input type="text" size="50">
-   </div>
+   <div id="pet"> <!-- Pic of pet goes here --> </div>
+   <div id="output"> <!-- Output goes here!--> </div>
+  
 </form>
 </body>
 </html>

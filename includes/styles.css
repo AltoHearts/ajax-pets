@@ -32,3 +32,7 @@ a:link {color: #00f;}
 a:visited {color: #36f;}
 a:hover {text-decoration: none;}
 a:active {color: #f00;}
+
+img {
+  width: 500px;
+}
