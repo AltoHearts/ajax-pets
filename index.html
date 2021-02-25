@@ -44,15 +44,15 @@
 
                 //create text to tell user about pet!
               let output = "";
-              output += `<p>Your is a: ${pet}</p>`;
+              output += `<p>Your pet is a: ${pet}</p>`;
               output += `<p>Your pet feels: ${feels}</p>`;
               output += `<p>Your pet likes to be:  ${likes}</p>`;
               output += `<p>Your pet likes to eat:  ${eats}</p>`;
 
               $("#output").html(output);
 
-              //load pic of let!
-              $('#pet').load(`includes/contents.html #${pet}`); 
+              //load pic of pet!
+              $('#pet').load(`includes/content.html #${pet}`); 
               //$('#pet').load('includes/contents.html #cute-kitten'); 
 
               e.preventDefault();//no need to submit as you'll be doing AJAX on this page
